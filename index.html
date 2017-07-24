@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- This is the correct script to make this work -->
 <html>
   <head>
     <title>JavaScript Hand-Written Templates</title>
@@ -11,6 +12,19 @@
         After careful consideration and a generous grant from NASA, our team has determined that a woodchuck could chuck five wood, with a standard deviation of +/- .37 wood.
       </p>
       <footer>posted by Chuck Wooden</footer>
+      <a href="#" onclick="addComment();">Add Comment</a>
+      <div id="comments">
+      </div>
     </article>
+
+    <footer>posted by Chuck Wooden</footer>
+    <form id="newComment" onSubmit="addComment()">
+      Add comment: <input type="text" id="commentText"><br>
+      Your name: <input type="text" id="commenterName"><br>
+      <input type="submit">
+    </form>
+    <div id="comments">
+    </div>
   </body>
 </html>
+
